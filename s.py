@@ -1,18 +1,28 @@
-import sys
-import pyfiglet
+
 import random
+while True:
+    try:
+        level = int(input("level"))
+        if level > 0:
+             break
+    except ValueError:
+        pass
 
-fonts = pyfiglet.FigletFont.getFonts()
+number = random.randint(1, level)
 
-if len(sys.argv) == 1:
-    font = random.choice(fonts)
+while True:
+    try:
+        guess= int(int(input))
+        if guess < 1:
+            continue
 
-elif len(sys.argv) == 3 and sys.argv[1] in ["-f", "--font"] and sys.argv[2] in fonts:
-    font = sys.argv[2]
+        if guess < number:
+            print("number too low")
+        elif guess > number:
+            print("number too high")
+        else:
+            print("Just right!")
+            break
 
-else:
-    sys.exit("Invalid usage")
-
-text = input("Input: ")
-
-print(pyfiglet.figlet_format(text, font=font))
+    except ValueError:
+        pass

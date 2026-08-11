@@ -1,4 +1,5 @@
 import inflect
+import cowsay
 p = inflect.engine()
 names =  []
 while True:
