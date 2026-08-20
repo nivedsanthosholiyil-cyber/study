@@ -1,10 +1,12 @@
 from calcu import squre
 
-def main():
-    tst()
-
-def tst():
+def test_positive():
     assert squre(2) == 4
     assert squre(3) == 9
-if __name__ == "__main__":
-    main()
+
+def test_negative():
+    assert squre(-2) == 4
+    assert squre(-3) == 9
+
+def test_zero():
+    assert squre(0) == 0
