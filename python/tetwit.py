@@ -1,4 +1,4 @@
-from twttr import shorten
+from twiter import shorten
 
 def test_lowercase():
     assert shorten("aeiou") == ""
