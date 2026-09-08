@@ -1,11 +1,12 @@
-#include <stdio.h>
-#include <stdlib.h>
-
-int main()
+int main ()
 {
-    printf("    / l \n");
-    printf("    /   l \n");
-    printf("   /     l \n");
-    printf("  /       l \n");
+    printf("Hello, World!\n");
+    sayhi();
+    printf("Hello, World!\n");
     return 0;
+}
+
+void sayhi ()
+{
+    printf("Hello, World!\n");
 }
