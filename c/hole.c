@@ -1,12 +1,10 @@
 int main ()
 {
-    printf("Hello, World!\n");
-    sayhi();
-    printf("Hello, World!\n");
+    sayhi("Alice");
     return 0;
 }
 
-void sayhi ()
+void sayhi (char name[])
 {
-    printf("Hello, World!\n");
+    printf("Hello, %s!\n", name);
 }
