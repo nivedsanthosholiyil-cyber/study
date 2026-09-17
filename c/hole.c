@@ -1,33 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
-int main(){
-    double num1;
-    double num2;
-    char op;
-    printf("Enter first number: ");
-    scanf("%lf", &num1);
-    printf("ENTER A OP: ");
-    scanf(" %c", &op);
-    printf("Enter second number: ");
-    scanf("%lf", &num2);
-    
-
-    if (op == '+'){
-
-        printf("%f", num1 + num2);
-    } else if (op == '-'){
-
-        printf("%f", num1 - num2);
-    } else if (op == '*'){
-
-        printf("%f", num1 * num2);
-    } else if (op == '/'){
-
-        printf("%f", num1 / num2);
-    } else {
-        printf("Invalid operator");
+int main() {
+    int lukynumber[] = {3, 7, 13, 21, 42};
+    int i;
+    for (i = 0; i <5; i++) {
+        printf("%d\n", lukynumber[i]);
     }
-    
-
     return 0;
 }
