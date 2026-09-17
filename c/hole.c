@@ -1,10 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 int main() {
-    int lukynumber[] = {3, 7, 13, 21, 42};
-    int i;
-    for (i = 0; i <5; i++) {
-        printf("%d\n", lukynumber[i]);
-    }
-    return 0;
+    int nums [3] [2] = {
+                      {1,3,4}
+                      {2,5,6}
+                      {3,2,1}
+
+
+    };
+
+    printf("%d", nums[2],[1]);
 }
