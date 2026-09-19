@@ -1,13 +1,17 @@
 #include <stdio.h>
 #include <stdlib.h>
-int main() {
-    int nums [3] [2] = {
-                      {1,3,4}
-                      {2,5,6}
-                      {3,2,1}
+int mad(int g1, int g2 ){
+    int result;
+    if (g1 > g2) {
+        result = g1;
+    }
+    else {
+        result = g2;
+    }
+    return result;
+}
+int main () {
+    printf("%d", mad(4, 10));
 
-
-    };
-
-    printf("%d", nums[2],[1]);
+    return 0;
 }
