@@ -1,3 +1,5 @@
 import re
 url = input("enter a url: ").strip()
-name = re.sub(r"^https?://(www\.)?", "", url)   
+matches = re.search(r"^https?://(www\.)?(\w+)\.(\w+)$", url)
+if matches:
+    print(f"Valid url: {matches.group(2)}")
